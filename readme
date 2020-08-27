@@ -1,18 +1,26 @@
 Anagramarama
+============
 
-Version 0.1 -   still needs a high score table and some
-		informational messages, but you can play a game.
+Updated 2020 by hackerb9.
 
-Version 0.2 -   Added keyboard support and the scrabble wordlist
+* Added default Makefile for UNIX systems with the ability to 'make
+install'. Note that this uses a simple wrapper script as the
+anagramarama source still is hardcoded to look in the current working
+directory for resource files. (Didn't Debian fix that over a decade
+ago? Oh, well. This kludge will do for now.)
 
-Version 0.3 -   Added internationalisation, portuguese is the first available
-                language, many more to follow!
+Outstanding Bugs
+================
 
-Version 0.4 -   Numerous bug-fixes and French support.
+* Should search paths for data directory instead of presuming
+  everything is in the current working directory.
 
-Version 0.5 -   Italian translation (by Michele Bucelli)
+* No full screen
 
+* Prints warnings on stderr that it can't find i18n dictionaries.
+  Should only be garrulous if something goes wrong.
 
+______________________________________________________________________
 Copyright (c) 2003-2010 Colm Gallagher et al.
 
 Licensed under the terms of the GPL - see gpl.txt for details.
